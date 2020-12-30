@@ -12,7 +12,7 @@
         <module>spring-cloud-server01</module>
         <module>spring-cloud-server02</module>
         <module>spring-cloud-server03</module>
-        <module>spring-boot-client01</module>
+        <module>spring-cloud-client01</module>
     </modules>
 
     <parent>
