@@ -5,7 +5,14 @@ eureka:
   instance:
     hostname: localhost
   client:
+    # 是否在 eureka 服务商注册自己的信息，以提供其他服务发现，默认 true
     register-with-eureka: false
+    #此客户端获取 eureka 服务器上的注册信息，默认 true
     fetch-registry: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    #开启自我保护模式（开启状态下服务停掉eureka不会立刻清除宕机服务）
+    enable-self-preservation: false
+    #清理掉无效的节点，默认 60*1000 ,即 60s
+    eviction-interval-timer-in-ms: 5000
