@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: server01
 
 server:
   port: 6001
@@ -6,11 +9,11 @@ eureka:
     hostname: localhost
   client:
     # 是否在 eureka 服务商注册自己的信息，以提供其他服务发现，默认 true
-    register-with-eureka: false
+    register-with-eureka: true
     #此客户端获取 eureka 服务器上的注册信息，默认 true
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://localhost:6001/eureka/,http://localhost:6002/eureka/,http://localhost:6003/eureka/
   server:
     #开启自我保护模式（开启状态下服务停掉eureka不会立刻清除宕机服务）
     enable-self-preservation: false

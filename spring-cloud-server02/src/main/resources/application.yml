@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: server02
 
 server:
   port: 6002
@@ -5,7 +8,12 @@ eureka:
   instance:
     hostname: localhost
   client:
-    register-with-eureka: false
+    register-with-eureka: true
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://localhost:6001/eureka/,http://localhost:6002/eureka/,http://localhost:6003/eureka/
+  server:
+    #开启自我保护模式（开启状态下服务停掉eureka不会立刻清除宕机服务）
+    enable-self-preservation: false
+    #清理掉无效的节点，默认 60*1000 ,即 60s
+    eviction-interval-timer-in-ms: 5000
