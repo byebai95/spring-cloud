@@ -10,6 +10,7 @@
         <module name="spring-cloud-client01" />
         <module name="spring-cloud-server03" />
         <module name="spring-cloud-server02" />
+        <module name="spring-cloud-config" />
         <module name="spring-cloud-server01" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-cloud-client01" options="-parameters" />
       <module name="spring-cloud-client02" options="-parameters" />
+      <module name="spring-cloud-config" options="-parameters" />
       <module name="spring-cloud-server01" options="-parameters" />
       <module name="spring-cloud-server02" options="-parameters" />
       <module name="spring-cloud-server03" options="-parameters" />

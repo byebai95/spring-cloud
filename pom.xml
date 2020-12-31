@@ -14,6 +14,7 @@
         <module>spring-cloud-server03</module>
         <module>spring-cloud-client01</module>
         <module>spring-cloud-client02</module>
+        <module>spring-cloud-config</module>
     </modules>
 
     <parent>
