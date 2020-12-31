@@ -9,14 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author bz
- * @date 2020/12/30
+ * @date 2020/12/31
  */
 @RestController
 @SpringBootApplication
 @EnableEurekaClient
-public class Client01Application {
+public class Client02Application {
+
     public static void main(String[] args) {
-        SpringApplication.run(Client01Application.class,args);
+        SpringApplication.run(Client02Application.class,args);
     }
 
     @Value("${server.port}")
@@ -24,6 +25,7 @@ public class Client01Application {
 
     @GetMapping("/getPort")
     public String getPort(){
-        return "server01 , port :" + port;
+        return "server02 , port :" + port;
     }
+
 }
