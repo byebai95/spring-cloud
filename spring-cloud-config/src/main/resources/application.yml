@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          url: https://github.com/bytecodebuffer/config-repository.git
+          username: baizhuang
+          password: bzz.299616
+          search-paths: config
+        label: main
+
+server:
+  port: 7003
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6001/eureka/
