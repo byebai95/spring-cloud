@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: server03
   cloud:
     config:
       uri: http://localhost:7003/
@@ -9,7 +7,3 @@ spring:
 server:
   port: 6003
 
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
