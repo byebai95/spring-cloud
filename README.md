@@ -1,7 +1,7 @@
 ## Spring-cloud
 spring cloud 父工程
 
-##依赖
+## 依赖
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"

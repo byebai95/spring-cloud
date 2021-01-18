@@ -1,5 +1,5 @@
 ## Client02
-客户端02
+客户端02号
 ## yml配置
 ```yaml
 spring:
