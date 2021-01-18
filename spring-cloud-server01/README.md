@@ -60,14 +60,6 @@ spring:
       uri: http://localhost:7003/
       profile: dev
       label: main
-
-server:
-  port: 6001
-
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
 ```
 ## 新增依赖
 ```yaml
