@@ -1,6 +1,6 @@
-##Server02
+## Server02
 服务端集群 02号
-##配置
+## 配置
 ```yml
 spring:
   application:
@@ -22,7 +22,7 @@ eureka:
     #清理掉无效的节点，默认 60*1000 ,即 60s
     eviction-interval-timer-in-ms: 5000
 ```
-##xml配置
+## xml配置
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"

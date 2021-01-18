@@ -1,7 +1,7 @@
 ## Server01 
 服务端集群 01号
 
-##参数
+## 参数
 ```yml
 spring:
   application:
@@ -26,7 +26,7 @@ eureka:
     eviction-interval-timer-in-ms: 5000
 ```
 
-##xml配置
+## xml配置
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
