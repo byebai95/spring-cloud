@@ -46,8 +46,38 @@ eureka:
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-            <version>2.2.1.RELEASE</version>
         </dependency>
     </dependencies>
 </project>
+```
+## 使用配置中心后
+```yaml
+spring:
+  application:
+    name: server01
+  cloud:
+    config:
+      uri: http://localhost:7003/
+      profile: dev
+      label: main
+
+server:
+  port: 6001
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+```
+## 新增依赖
+```yaml
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
 ```

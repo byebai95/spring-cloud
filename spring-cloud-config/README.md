@@ -14,7 +14,7 @@ spring:
         git:
           uri: https://github.com/byebai95/config-repository.git
           username: byebai95
-          password: bzz.299616
+          password: 密码
           search-paths: config
           default-label: main
         bootstrap: true
@@ -44,7 +44,6 @@ spring:
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
-            <version>2.2.1.RELEASE</version>
         </dependency>
     </dependencies>
 
