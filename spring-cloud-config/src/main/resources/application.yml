@@ -1,3 +1,6 @@
+server:
+  port: 7003
+
 spring:
   application:
     name: config
@@ -5,16 +8,11 @@ spring:
     config:
       server:
         git:
-          url: https://github.com/bytecodebuffer/config-repository.git
-          username: baizhuang
-          password:
+          uri: https://github.com/byebai95/config-repository.git
+          username: byebai95
+          password: bzz.299616
           search-paths: config
-        label: main
+          default-label: main
+        bootstrap: true
 
-server:
-  port: 7003
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:6001/eureka/
