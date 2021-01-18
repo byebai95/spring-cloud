@@ -1,9 +1,10 @@
 spring:
+  application:
+    name: server03
   cloud:
     config:
       uri: http://localhost:7003/
       profile: dev
       label: main
-server:
-  port: 6003
+
 
