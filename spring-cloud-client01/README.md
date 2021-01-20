@@ -42,6 +42,7 @@ eureka:
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.2.1.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -51,4 +52,32 @@ eureka:
         </dependency>
     </dependencies>
 </project>
+```
+
+## 接入配置中心
+```yaml
+spring:
+  application:
+    name: client01
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:7003/
+      profile: dev
+      label: main
+```
+## 新增依赖
+```xml
+   <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-client</artifactId>
+            <version>2.2.1.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>2.2.1.RELEASE</version>
+        </dependency>
 ```
