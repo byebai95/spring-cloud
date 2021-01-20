@@ -20,9 +20,8 @@ public class Client02Application {
     }
 
 
-    @GetMapping("/getPort")
-    public String getPort(){
-        return "server02 , port : 7002";
+    @GetMapping("/say")
+    public String say(){
+        return "client 02 ,port 7002";
     }
-
 }
