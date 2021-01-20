@@ -7,6 +7,8 @@
     <file url="file://$PROJECT_DIR$/spring-cloud-client02/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-hystrix/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-ribbon/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-server01/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-server01/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-server02/src/main/java" charset="UTF-8" />

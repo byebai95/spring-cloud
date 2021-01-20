@@ -1,6 +1,6 @@
 spring:
   application:
-    name: client01
+    name: ribbon
   profiles:
     active: dev
   cloud:

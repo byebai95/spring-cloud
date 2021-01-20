@@ -11,14 +11,18 @@ import org.springframework.web.client.RestTemplate;
  */
 @Service
 @AllArgsConstructor
-public class TestService {
-
-    private final RestTemplate restTemplate;
+public class HystrixService {
 
     @HystrixCommand(fallbackMethod = "error")
     public String say(){
         int i = 1/0;
-        return restTemplate.getForObject("http://localhost:7002/getPort",String.class);
+        return "say() request success";
+    }
+
+
+    @HystrixCommand(fallbackMethod = "error")
+    public String eat(){
+        return "eat() request success";
     }
 
     public String error(){

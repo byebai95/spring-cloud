@@ -5,25 +5,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
 
 /**
  * @author bz
- * @date 2020/12/30
+ * @date 2021/1/20
  */
+@EnableHystrix
 @EnableCircuitBreaker
 @EnableHystrixDashboard
-@EnableHystrix
 @SpringBootApplication
-public class Client01Application {
+public class HystrixApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Client01Application.class,args);
+        SpringApplication.run(HystrixApplication.class,args);
     }
-
-     @Bean
-     public RestTemplate restTemplate(){
-        return new RestTemplate();
-    }
-
 }

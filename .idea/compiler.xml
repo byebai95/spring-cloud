@@ -2,16 +2,19 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-cloud-client02" />
-        <module name="spring-cloud-client01" />
+        <module name="spring-cloud-hystrix" />
+        <module name="spring-cloud-ribbon" />
         <module name="spring-cloud-server03" />
         <module name="spring-cloud-server02" />
         <module name="spring-cloud-config" />
         <module name="spring-cloud-server01" />
+        <module name="spring-cloud-client02" />
+        <module name="spring-cloud-client01" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +23,8 @@
       <module name="spring-cloud-client01" options="-parameters" />
       <module name="spring-cloud-client02" options="-parameters" />
       <module name="spring-cloud-config" options="-parameters" />
+      <module name="spring-cloud-hystrix" options="-parameters" />
+      <module name="spring-cloud-ribbon" options="-parameters" />
       <module name="spring-cloud-server01" options="-parameters" />
       <module name="spring-cloud-server02" options="-parameters" />
       <module name="spring-cloud-server03" options="-parameters" />

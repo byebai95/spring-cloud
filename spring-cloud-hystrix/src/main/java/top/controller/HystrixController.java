@@ -2,9 +2,8 @@ package top.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import top.service.TestService;
+import top.service.HystrixService;
 
 /**
  * @author bz
@@ -12,12 +11,17 @@ import top.service.TestService;
  */
 @RestController
 @AllArgsConstructor
-public class TestController {
+public class HystrixController {
 
-    private final TestService testService;
+    private final HystrixService hystrixService;
 
     @GetMapping("/say")
-    public String getPort(){
-        return testService.say();
+    public String say(){
+        return hystrixService.say();
+    }
+
+    @GetMapping("/eat")
+    public String eat(){
+        return hystrixService.eat();
     }
 }

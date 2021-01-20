@@ -1,6 +1,6 @@
 spring:
   application:
-    name: client01
+    name: hystrix
   profiles:
     active: dev
   cloud:
