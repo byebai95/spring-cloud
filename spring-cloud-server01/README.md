@@ -46,7 +46,6 @@ eureka:
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-            <version>2.2.1.RELEASE</version>
         </dependency>
     </dependencies>
 </project>
