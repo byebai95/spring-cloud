@@ -19,11 +19,9 @@ public class Client01Application {
         SpringApplication.run(Client01Application.class,args);
     }
 
-    @Value("${server.port}")
-    String port;
 
     @GetMapping("/getPort")
     public String getPort(){
-        return "server01 , port :" + port;
+        return "server01 , port : 7001";
     }
 }

@@ -1,6 +1,5 @@
 package top;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -20,12 +19,10 @@ public class Client02Application {
         SpringApplication.run(Client02Application.class,args);
     }
 
-    @Value("${server.port}")
-    String port;
 
     @GetMapping("/getPort")
     public String getPort(){
-        return "server02 , port :" + port;
+        return "server02 , port : 7002";
     }
 
 }

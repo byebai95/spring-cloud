@@ -1,19 +1,10 @@
 spring:
   application:
     name: client01
-
-server:
-  port: 7001
-
-eureka:
-  instance:
-    # eureka 客户端需要多长时间发送心跳给 eureka 服务端，默认 30s
-    lease-renewal-interval-in-seconds: 2
-    # eureka 服务端在接收到实例最后一次发送心跳后，需要等待多久才可以将实例移除 默认90s
-    lease-expiration-duration-in-seconds: 10
-
-  client:
-    # 标识 eureka client 间隔多久去拉去服务器注册信息，默认 30s
-    registry-fetch-interval-seconds: 30
-    service-url:
-      defaultZone:  http://server01:6001/eureka/,http://server02:6002/eureka/,http://server03:6003/eureka/
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:7003/
+      profile: dev
+      label: main
